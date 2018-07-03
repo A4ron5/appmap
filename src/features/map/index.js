@@ -1,0 +1,1 @@
+export { Mapka } from './map'
