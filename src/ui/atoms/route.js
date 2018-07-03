@@ -1,10 +1,9 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const Route = styled.li`
-
+export const RouteUI = styled.li`
+  padding: 5px;
+  border: 1px black solid;
+  &:not(:nth-child(1)) {
+    border-top: none;
+  }
 `
-
-export const RouteUI = (text) => (
-  <Route>{text}</Route>
-)
