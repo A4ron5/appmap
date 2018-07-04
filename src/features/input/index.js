@@ -1,3 +1,3 @@
 export { Input } from './input'
 
-export { routes } from './reducer.js'
+export { input } from './reducer.js'

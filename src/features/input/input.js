@@ -17,7 +17,9 @@ export class InputRaw extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addRouteToList(this.state.text)
+    if(!this.props.routes.includes(this.state.text)){
+      this.props.addRouteToList(this.state.text)
+    }
   }
 
   render() {
@@ -31,7 +33,7 @@ export class InputRaw extends React.Component {
 
 const mapStateToProps = state => {
   return {
-
+    routes: state.input.routes
   }
 }
 
