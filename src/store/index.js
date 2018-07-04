@@ -2,8 +2,8 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import logger from 'redux-logger'
 
-import { routes } from '../features/input'
+import { input } from '../features/input'
 
-const rootReducer = combineReducers({ routes })
+const rootReducer = combineReducers({ input })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk, logger))
